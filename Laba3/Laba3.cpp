@@ -37,7 +37,7 @@ int main() {
 #endif
 	std::wstring fileN;
 
-	std::wcout << L"Введите название файла: " << std::endl;
+	std::wcout << L"Введите название файла: ";
 
 	if (!(std::wcin >> fileN)) {
 		return 1;
@@ -64,7 +64,7 @@ int main() {
 	}
 
 	if (!fileFound) {
-		std::wcout << "Указанный файл не найден в текущей папке" << std::endl;
+		std::wcout << L"Указанный файл не найден в текущей папке" << std::endl;
 		return 1;
 	}
 
@@ -83,7 +83,7 @@ int main() {
 	}
 
 	std::wstring line;
-	std::wcout << L"\n-----Перевернутый текст-----" << std::endl;
+	std::wcout << L"\n--------------------Перевернутый текст--------------------\n" << std::endl;
 
 	while (std::getline(file, line)) {
 		std::reverse(line.begin(), line.end());
