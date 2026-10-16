@@ -145,7 +145,9 @@
     <Text Include="testingFile.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="dyno.dyno" />
     <None Include="testingFile2.cst" />
+    <None Include="тестовый.pdf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
